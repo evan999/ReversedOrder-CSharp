@@ -10,6 +10,10 @@ namespace ReversedOrder
     {
         static void Main(string[] args)
         {
+            int result = Kata.ReversedOrder(12345);
+
+            Console.ReadLine();
+
         }
     }
 }

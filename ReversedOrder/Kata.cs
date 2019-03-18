@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ReversedOrder
 
-// create a function that will take an integer and reverse the order
+// Create a function that will take an integer and reverse the order
 
 // ex
 // Input: 21445 Output: 54412
@@ -20,34 +20,28 @@ namespace ReversedOrder
         public static int ReversedOrder(int num)
         {
             // Get the digits of the integer
-            
-            // int index = 0;
-            // int[] digits;
-            // int digit = num % 10;
-            /*
-            while (num > 0)
-            {
-                digits[index] = num % 10;
-                num = num / 10;
-                index++;
-            }
-            */
-            int count = 0;
-            int result = num;
 
+            // Store the digits into an integer
+            int reversed = 0;
+           
             while (num > 0)
             {
+                // Extract each digit of the integer
                 int digit = num % 10;
-                Console.WriteLine("Digit: " + digit);
-                if (digit == 1)
-                    count++;
+                // Console.WriteLine("Digit picked: " + digit);
+
+                // Store the digits extracted into a new integer
+                reversed = reversed * 10 + digit;
+                // Console.WriteLine("Digit: " + reversed);
+
+                // Trim the last digit of the current value of num
                 num /= 10;
-                Console.WriteLine("Num: " + num);
-
+                // Console.WriteLine("Num: " + num);
             }
-            Console.WriteLine(num);
 
-            return 0;
+            // Console.WriteLine(num);
+
+            return reversed;
         }
     }
 }

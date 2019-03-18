@@ -10,7 +10,7 @@ namespace ReversedOrder
     {
         static void Main(string[] args)
         {
-            int result = Kata.ReversedOrder(12345);
+            Console.WriteLine("Reversed Order: " + Kata.ReversedOrder(21445));
 
             Console.ReadLine();
 
